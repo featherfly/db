@@ -1,0 +1,89 @@
+
+/**
+ * @author 钟冀 - yufei
+ *		 	Mar 12, 2009
+ */
+package cn.featherfly.common.db.data;
+
+import java.io.Writer;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.util.Collection;
+
+import cn.featherfly.common.db.JdbcUtils;
+import cn.featherfly.common.db.metadata.DatabaseMetadata;
+import cn.featherfly.common.db.metadata.TableMetadata;
+import cn.featherfly.common.lang.LangUtils;
+
+/**
+ * <p>
+ * 数据导出为xml
+ * </p>
+ *
+ * @author 钟冀
+ *
+ */
+public class DataExportorImpl2 extends AbstractDataExportor {
+	
+	private DataFormatFactory facotry;
+	
+	/**
+	 */
+	public DataExportorImpl2(DataFormatFactory factory) {
+		this.facotry = factory;
+	}
+	
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void exportData(Writer writer, Collection<Query> querys) {
+		try {
+			DatabaseMetadata databaseMetadata = getDatabaseMetadata();
+			DataFormat dataFormat = facotry.createDataFormat(writer, getDialect());
+			dataFormat.writeDataStart(databaseMetadata);
+			for (Query query : querys) {
+				exportData(query, dataFormat);
+			}
+			dataFormat.writeDataEnd(databaseMetadata);
+		} catch (Exception e) {
+			throw new ExportException(e);
+		}
+	}
+	
+	private void exportData(Query query, DataFormat dataFormat) throws Exception{
+		//得到字段信息
+		Connection conn = getDataSource().getConnection();
+		PreparedStatement prep = conn.prepareStatement(query.getSql());
+		if (LangUtils.isNotEmpty(query.getParams())) {
+			JdbcUtils.setParameters(prep, query.getParams());
+		}
+		ResultSet res = prep.executeQuery();
+		ResultSetMetaData rsmd = res.getMetaData();
+		String name = query.getName();
+		if (LangUtils.isEmpty(name)) {
+			name = rsmd.getTableName(1);
+			if (LangUtils.isEmpty(name)) {
+				throw new ExportException("自动获取表名称失败，当前数据库驱动不支持从结果集获取表名称！");
+			} else {
+				logger.debug("自动从结果集第一列获取表名称：{}", name);
+			}
+		}
+		TableMetadata tableMetadata = getDatabaseMetadata().getTable(name);
+		
+		dataFormat.writeTableStart(tableMetadata);
+		while(res.next()){
+			dataFormat.writeRow(tableMetadata, res);			
+		}
+		
+		dataFormat.writeTableEnd(tableMetadata);
+
+		JdbcUtils.closeQuietly(conn, prep, res);
+	}
+
+	// ********************************************************************
+	//	property
+	// ********************************************************************
+}
