@@ -1,0 +1,98 @@
+apply plugin: "java"
+apply plugin: "ivy-publish"
+apply plugin: 'maven'  
+apply plugin: "maven-publish"
+apply plugin: 'eclipse'
+
+group = 'cn.featherfly' 
+version = '1.4.6'
+
+sourceCompatibility = 1.7  
+targetCompatibility = 1.7  
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+tasks.withType(Javadoc) {
+    options.encoding = "UTF-8"
+}
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src"]
+        }
+    }
+}
+
+ext {
+	compileDependencies =[
+    	'cn.featherfly:featherfly-common:latest.integration'
+    	,'dom4j:dom4j:1.6.1'
+		]
+}
+
+repositories {
+	mavenCentral()
+	maven {
+		url  ant.properties['user.home'] +  "/.m2/repository"
+	}	
+}
+
+task sourcesJar(type: Jar) {
+	classifier "sources"
+    from sourceSets.main.java.srcDirs
+}
+
+task javadocJar(type: Jar, dependsOn:javadoc) { 
+     classifier = "javadoc"
+     from javadoc.destinationDir 
+}
+
+artifacts {  
+    archives jar  
+    archives javadocJar  
+    archives sourcesJar  
+}  
+ 
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+        	from components.java
+            artifact (sourcesJar) {
+             	classifier "source"
+            }
+			artifact (javadocJar) {
+				classifier "javadoc"
+			}
+        }
+    }    
+}
+  
+dependencies {
+	for (def depend : compileDependencies)  {
+		compile (depend)
+	}
+    testCompile (
+    	'org.testng:testng:latest.integration'
+    )
+}
+/*
+test {
+    useTestNG()
+    testLogging.showStandardStreams = true
+    minHeapSize = "128m"
+    maxHeapSize = "512m"
+    jvmArgs '-XX:MaxPermSize=256m'
+    beforeTest { descriptor ->
+        logger.lifecycle("Running test: " + descriptor)
+    }
+    onOutput { descriptor, event ->
+        logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message)
+    }
+}
+*/
+jar {
+    manifest.attributes buildBy: "zhong ji"
+    manifest.attributes provider: "gradle"
+}

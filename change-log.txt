@@ -1,4 +1,4 @@
-2015-
+2015-04-09
 1.4.6
 	1.修复ConditionBuilder在分页情况下出现参数不对的问题
 	2.JdbcUtils.setParameter加入对enum的支持，保存enum.ordinal()

@@ -5,7 +5,7 @@
 	<!-- 版本名称 -->
 	<property name="version" value="1" />
 	<property name="subVersion" value="4" />
-	<property name="reversion" value="5" />
+	<property name="reversion" value="6" />
 	<property name="pubVersion" value="${version}.${subVersion}.${reversion}" />
 	<!-- 项目名称 -->
 	<property name="projectName" value="featherfly-db"/>
