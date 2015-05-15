@@ -252,7 +252,6 @@ public class ConditionGroup implements ExpressionBuilder, LogicBuilder , Paramed
 			}
 		}
 
-//		boolean first = true;
 		if (availableExpressions.size() > 0) {
 			if (availableExpressions.get(0) instanceof LogicExpression) {
 				availableExpressions.remove(0);
@@ -262,29 +261,6 @@ public class ConditionGroup implements ExpressionBuilder, LogicBuilder , Paramed
 
 		for (String condition : availableConditions) {
 			ConditionBuildUtils.appendCondition(result, condition);
-//			if (first) {
-//				result.append(condition);
-//			} else {
-//				result.append(" ").append(condition);
-//			}
-//			if (first) {
-//				first = false;
-//			}
-
-//			else if (previousLogic != null) {
-//				if (condition instanceof LogicExpression) {
-//					if (previousCondition != null) {
-//						throw new IllegalArgumentException("语法错误，连续的运算符");
-//					}
-//				}
-//			}
-
-//			// 最近的判断逻辑
-//			if (condition instanceof LogicExpression) {
-//				previousLogic = (LogicExpression) condition;
-//			} else {
-//				previousLogic = null;
-//			}
 		}
 		if (result.length() > 0 && parent != null) {
 			return " ( " + result.toString() + " ) ";

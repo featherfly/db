@@ -61,9 +61,9 @@ public class ConditionBuilder implements ExpressionBuilder, OrderBuilder {
 		if (this.pagination != null) {
 			AssertStandardSys.isNotEmpty(this.dialect, "需要分页时，dialect不能为空");
 			PaginationWrapper<Object> pw = new PaginationWrapper<Object>(pagination);
-			return dialect.getPaginationSql(result.toString(), pw.getStart(), pw.getLimit());
+			return dialect.getPaginationSql(result.toString(), pw.getStart(), pw.getLimit()).trim();
 		} else {
-			return  result.toString();
+			return  result.toString().trim();
 		}
 	}
 //	/**

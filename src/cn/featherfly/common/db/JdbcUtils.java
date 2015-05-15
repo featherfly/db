@@ -499,7 +499,8 @@ public final class JdbcUtils {
 	 * @param requiredType the required value type (may be <code>null</code>)
 	 * @return the value object
 	 */
-	public static Object getResultSetValue(ResultSet rs, int index,
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+    public static Object getResultSetValue(ResultSet rs, int index,
 			Class<?> requiredType) {
 		if (requiredType == null) {
 			return getResultSetValue(rs, index);
