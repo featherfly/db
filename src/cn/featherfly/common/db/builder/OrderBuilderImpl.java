@@ -85,7 +85,10 @@ public class OrderBuilderImpl implements OrderBuilder {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * <p>
+	 * 构建排序字符串
+	 * </p>
+	 * @return 排序字符串
 	 */
 	public String build() {
 		StringBuilder sb = new StringBuilder();

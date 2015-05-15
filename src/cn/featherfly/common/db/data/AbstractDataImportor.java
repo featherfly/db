@@ -57,7 +57,7 @@ public abstract class AbstractDataImportor extends AbstractDataImpExp implements
 	 * <p>
 	 * 添加过滤器
 	 * </p>
-	 * @param dataFilter dataFilter
+	 * @param filters dataFilters
 	 */
 	public void addFilter(DataFilter...filters) {
 		if (LangUtils.isNotEmpty(filters)) {

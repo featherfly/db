@@ -954,7 +954,7 @@ public class ResultSetWrapper {
 
 	/**
 	 * @see java.sql.ResultSet
-	 @ deprecated
+	 * @deprecated
 	 */
 	@Deprecated
 	public InputStream getUnicodeStream(int columnIndex) {

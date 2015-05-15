@@ -26,7 +26,7 @@ public interface DataExportor {
 	 * <p>
 	 * 导出某张表
 	 * </p>
-	 * @param tableName  表名称
+	 * @param tableName 表名称
 	 * @param writer writer
 	 */
 	void exportTable(String tableName, Writer writer);
@@ -75,7 +75,6 @@ public interface DataExportor {
 	 * 导出结果集
 	 * </p>
 	 * @param querySql 查询sql
-	 * @param tableName  表名称
 	 * @param writer writer
 	 */
 	void exportData(String querySql, Writer writer);

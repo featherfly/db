@@ -35,7 +35,6 @@ public class ConditionBuilder implements ExpressionBuilder, OrderBuilder {
 	}
 
 	/**
-	 * @param name 查询对象名称
 	 * @param queryAlias 查询对象别名
 	 */
 	public ConditionBuilder(String queryAlias) {

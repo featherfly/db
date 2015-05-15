@@ -1,3 +1,8 @@
+2015-05-15
+1.4.7
+	1.加入SelectBuilder、SqlBuilder
+	2.ConditionBuilder.build返回会先trim()
+	
 2015-04-09
 1.4.6
 	1.修复ConditionBuilder在分页情况下出现参数不对的问题

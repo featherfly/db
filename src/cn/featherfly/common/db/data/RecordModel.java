@@ -57,7 +57,6 @@ public class RecordModel {
 	 * <p>
 	 * 返回全部ValueModel
 	 * </p>
-	 * @param columnName 列名
 	 * @return ValueModel集合
 	 */
 	public Collection<ValueModel> getValueModes() {

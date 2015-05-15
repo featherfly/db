@@ -93,7 +93,7 @@ public interface ExpressionBuilder extends Builder{
 	/**
 	 * 不包含指定，sql中的not in
 	 * @param name 参数名称
-	 * @param values 参数值
+	 * @param value 参数值
 	 * @return LogicBuilder
 	 */
 	LogicBuilder nin(String name, Object value);
