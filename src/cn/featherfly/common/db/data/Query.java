@@ -1,6 +1,7 @@
 
 package cn.featherfly.common.db.data;
 
+
 /**
  * <p>
  * Query
@@ -8,20 +9,10 @@ package cn.featherfly.common.db.data;
  * 
  * @author 钟冀
  */
-public interface Query {
+public interface Query extends Execution{
 	/**
 	 * 返回查询名称.
 	 * @return name
 	 */
 	String getName();
-	/**
-	 * 返回sql
-	 * @return sql
-	 */
-	String getSql();
-	/**
-	 * 返回params
-	 * @return params
-	 */
-	Object[] getParams();
 }
