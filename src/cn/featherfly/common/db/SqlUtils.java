@@ -18,6 +18,10 @@ public final class SqlUtils {
 
 	private static final Pattern SELECT_PATTERN = Pattern.compile("((select )(distinct [\\w-_.]+)?,?.+)(from .+)" ,
 			Pattern.CASE_INSENSITIVE);
+	
+//	private static final Pattern SELECT_PATTERN = 
+//	        Pattern.compile("((select )(distinct [\\w-_.]+)?,?.+)(from +[\\w-_.]+(( as)? +[\\w-_.&&[^where]]+)?)( +where +[\\w-_.]+ ?\\W ?[\\w-_.]+)?( +order +by +[\\w-_.]+ (desc|asc))?.?" 
+//	                , Pattern.CASE_INSENSITIVE);
 
 	private SqlUtils() {
 	}
