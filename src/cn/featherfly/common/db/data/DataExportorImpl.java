@@ -19,7 +19,7 @@ import cn.featherfly.common.lang.LangUtils;
 
 /**
  * <p>
- * 数据导出为xml
+ * 通用数据导出器，使用DataFormatFactory格式化数据
  * </p>
  *
  * @author 钟冀
@@ -66,7 +66,8 @@ public class DataExportorImpl extends AbstractDataExportor {
 		if (LangUtils.isEmpty(name)) {
 			name = rsmd.getTableName(1);
 			if (LangUtils.isEmpty(name)) {
-				throw new ExportException("自动获取表名称失败，当前数据库驱动不支持从结果集获取表名称！");
+				throw new ExportException("#driver.resultset.tablename");
+//				throw new ExportException("自动获取表名称失败，当前数据库驱动不支持从结果集获取表名称！");
 			} else {
 				logger.debug("自动从结果集第一列获取表名称：{}", name);
 			}

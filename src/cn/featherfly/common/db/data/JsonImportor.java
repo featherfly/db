@@ -24,7 +24,7 @@ import com.fasterxml.jackson.core.JsonToken;
 
 /**
  * <p>
- * 数据导出为xml
+ * 导出为JSON格式的数据导入
  * </p>
  *
  * @author 钟冀

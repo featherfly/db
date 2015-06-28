@@ -169,7 +169,8 @@ public class DatabaseMetadataManager {
 	private String getDatabase(Connection connection) {
 		String catalog = JdbcUtils.getCatalog(connection);
 		if (StringUtils.isEmpty(catalog)) {
-			throw new DatabaseMetadataException("数据库驱动不支持从连接对象获取当前连接的具体库，请使用带具体库名称的方法显示创建！");
+			throw new DatabaseMetadataException("#driver.not.support.catalog");
+//			throw new DatabaseMetadataException("数据库驱动不支持从连接对象获取当前连接的具体库，请使用带具体库名称的方法显示创建！");
 		}
 		return catalog;
 	}
@@ -258,8 +259,9 @@ public class DatabaseMetadataManager {
 			}
 			rs.close();
 			if (!hasDatabase) {
-				throw new DatabaseMetadataException(String.format(
-						"没有在数据源中找到具体库%s（mysql为库，oracle为表空间）", dataBase));
+			    throw new DatabaseMetadataException("#driver.not.find.database", new Object[] {dataBase});
+//				throw new DatabaseMetadataException(String.format(
+//						"没有在数据源中找到具体库%s（mysql为库，oracle为表空间）", dataBase));
 			}
 			databasemetadataPool.put(dataBase, databaseMetadata);
 			databaseMetadata.setName(dataBase);

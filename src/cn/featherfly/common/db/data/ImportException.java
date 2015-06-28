@@ -2,7 +2,7 @@ package cn.featherfly.common.db.data;
 
 import java.util.Locale;
 
-import cn.featherfly.common.exception.StandardResourceBundleException;
+import cn.featherfly.common.db.JdbcException;
 
 
 /**
@@ -12,7 +12,7 @@ import cn.featherfly.common.exception.StandardResourceBundleException;
  *
  * @author 钟冀
  */
-public class ImportException extends StandardResourceBundleException {
+public class ImportException extends JdbcException {
 
 	/**
 	 * 

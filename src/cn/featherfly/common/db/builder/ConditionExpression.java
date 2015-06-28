@@ -43,7 +43,8 @@ public class ConditionExpression implements ParamedExpression{
 	 */
 	ConditionExpression(String name, String queryAlias, Object value, QueryOperator queryOperator) {
 		if (queryOperator == null) {
-			throw new JdbcException("queryOperator不能为空");
+			throw new JdbcException("#query.operator.null");
+//			throw new JdbcException("queryOperator不能为空");
 		}
 		this.name = name;
 		this.value = value;

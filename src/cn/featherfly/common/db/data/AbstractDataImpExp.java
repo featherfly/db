@@ -61,7 +61,8 @@ public abstract class AbstractDataImpExp{
 	 */
 	public Dialect getDialect() {
 		if (dialect == null) {
-			throw new ImportException("dialect 未设置");
+			throw new ImportException("#dialect.null");
+//			throw new ImportException("dialect 未设置");
 		}
 		return dialect;
 	}
@@ -90,7 +91,8 @@ public abstract class AbstractDataImpExp{
 	 */
 	protected DataSource getDataSource() {
 		if (dataSource == null) {
-			throw new ExportException("dataSource未设置");
+			throw new ExportException("#dataSource.null");
+//			throw new ExportException("dataSource未设置");
 		}
 		return dataSource;
 	}
@@ -110,7 +112,8 @@ public abstract class AbstractDataImpExp{
 		if (LangUtils.isEmpty(database)) {
 			database = JdbcUtils.getCatalog(getDataSource());
 			if (database == null) {
-				throw new ExportException("数据库连接的具体库名称不能为空！");
+				throw new ExportException("#database.null");
+//				throw new ExportException("数据库连接的具体库名称不能为空！");
 			}
 		}
 		return database;

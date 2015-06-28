@@ -1,3 +1,8 @@
+2015-06-28
+1.4.9
+	1.升级featherfly-common
+	2.把错误消息全部移动到properties文件中
+	
 2015-06-04
 1.4.8
 	1.加入Execution
