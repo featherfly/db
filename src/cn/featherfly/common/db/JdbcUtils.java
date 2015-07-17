@@ -556,7 +556,7 @@ public final class JdbcUtils {
 			} else if (Clob.class.equals(requiredType)) {
 				value = rs.getClob(index);
 			} else if (requiredType.isEnum()) {
-				value = LangUtils.toEnum((Class<Enum>) requiredType, rs.getInt(index)) ;
+				value = LangUtils.toEnum((Class<Enum>) requiredType, rs.getObject(index)) ;
 			} else {
 				// Some unknown type desired -> rely on getObject.
 				value = getResultSetValue(rs, index);

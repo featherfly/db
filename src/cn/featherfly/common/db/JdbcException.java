@@ -2,7 +2,7 @@ package cn.featherfly.common.db;
 
 import java.util.Locale;
 
-import cn.featherfly.common.exception.StandardResourceBundleException;
+import cn.featherfly.common.exception.LocalizedException;
 
 /**
  * <p>
@@ -11,7 +11,7 @@ import cn.featherfly.common.exception.StandardResourceBundleException;
  *
  * @author 钟冀
  */
-public class JdbcException extends StandardResourceBundleException {
+public class JdbcException extends LocalizedException {
 	
 	private static final long serialVersionUID = -7034897190745766939L;
 
