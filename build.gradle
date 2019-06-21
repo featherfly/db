@@ -32,10 +32,13 @@ ext {
 }
 
 repositories {
-	mavenCentral()
-	maven {
-		url  ant.properties['user.home'] +  "/.m2/repository"
-	}	
+    maven {
+        url  ant.properties['user.home'] +  "/.m2/repository"
+    }
+    maven {
+        url  "http://maven.aliyun.com/nexus/content/groups/public/"
+    }
+    mavenCentral()
 }
 
 task sourcesJar(type: Jar) {
