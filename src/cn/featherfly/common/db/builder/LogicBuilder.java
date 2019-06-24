@@ -7,7 +7,7 @@ package cn.featherfly.common.db.builder;
  * 逻辑建造者
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public interface LogicBuilder{
 	/**

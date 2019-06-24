@@ -19,7 +19,7 @@ import cn.featherfly.common.lang.LangUtils;
  * 抽象导出器
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public abstract class AbstractDataExportor extends AbstractDataImpExp implements DataExportor{
 	/**

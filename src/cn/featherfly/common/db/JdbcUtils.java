@@ -31,7 +31,7 @@ import cn.featherfly.common.lang.LogUtils;
  * JDBC操作的工具类
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public final class JdbcUtils {
 

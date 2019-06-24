@@ -6,7 +6,7 @@ package cn.featherfly.common.db.generator;
  * Generator
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public interface Generator {
 	/**

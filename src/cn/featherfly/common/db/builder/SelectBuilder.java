@@ -14,7 +14,7 @@ import cn.featherfly.common.lang.LangUtils;
  * SelectBuilder
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public class SelectBuilder implements Builder {
 

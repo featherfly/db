@@ -1,5 +1,5 @@
 /**
- * @author 钟冀 - yufei
+ * @author zhongj - yufei
  *		 	Mar 12, 2009
  */
 package cn.featherfly.common.db.data.json;
@@ -30,7 +30,7 @@ import com.fasterxml.jackson.core.JsonToken;
  * 数据导出为xml
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  *
  */
 public abstract class JsonImportor extends AbstractDataImportor {

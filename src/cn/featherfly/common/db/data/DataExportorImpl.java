@@ -1,6 +1,6 @@
 
 /**
- * @author 钟冀 - yufei
+ * @author zhongj - yufei
  *		 	Mar 12, 2009
  */
 package cn.featherfly.common.db.data;
@@ -22,7 +22,7 @@ import cn.featherfly.common.lang.LangUtils;
  * 通用数据导出器，使用DataFormatFactory格式化数据
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  *
  */
 public class DataExportorImpl extends AbstractDataExportor {

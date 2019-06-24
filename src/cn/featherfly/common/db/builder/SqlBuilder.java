@@ -8,7 +8,7 @@ import java.util.Collection;
  * SqlBuilder
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public class SqlBuilder implements Builder{
     

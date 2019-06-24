@@ -1,6 +1,6 @@
 //
 ///**
-// * @author 钟冀 - yufei
+// * @author zhongj - yufei
 // *		 	Mar 12, 2009
 // */
 //package cn.featherfly.common.db.data.sql;
@@ -33,7 +33,7 @@
 // * 数据导出为sql
 // * </p>
 // *
-// * @author 钟冀
+// * @author zhongj
 // *
 // */
 //public abstract class SqlExportor extends AbstractDataExportor {

@@ -12,7 +12,7 @@ import cn.featherfly.common.db.data.query.TableQuery;
  * 数据导出
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public interface DataExportor {
 	/**

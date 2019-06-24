@@ -10,7 +10,7 @@ import cn.featherfly.common.lang.AssertIllegalArgument;
  * TableQuery
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public class TableQuery implements Query{
 

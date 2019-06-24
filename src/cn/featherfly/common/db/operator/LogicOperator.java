@@ -6,7 +6,7 @@ package cn.featherfly.common.db.operator;
  * 逻辑操作符
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public enum LogicOperator {
 	/**

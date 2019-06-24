@@ -12,7 +12,7 @@ import cn.featherfly.common.db.dialect.Dialect;
  * DataFormatFactory
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public interface DataFormatFactory {
 	/**

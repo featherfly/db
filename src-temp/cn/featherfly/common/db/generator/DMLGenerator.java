@@ -6,7 +6,7 @@ package cn.featherfly.common.db.generator;
  * DMLGenerator
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public abstract class DMLGenerator extends AbstractGenerator{
 	protected String getKeywordInsert() {

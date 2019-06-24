@@ -16,7 +16,7 @@ import cn.featherfly.common.lang.LangUtils;
  * <p>
  * Oracle数据库方言实现类.
  * </p>
- * @author 钟冀
+ * @author zhongj
  */
 public class OracleDialect extends AbstractDialect {
 

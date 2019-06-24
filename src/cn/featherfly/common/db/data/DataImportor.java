@@ -8,7 +8,7 @@ import java.io.Reader;
  * 数据导入
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public interface DataImportor {
 	/**
@@ -23,7 +23,7 @@ public interface DataImportor {
 	 * 数据存在时的策略.
 	 * </p>
 	 *
-	 * @author 钟冀
+	 * @author zhongj
 	 */
 	public static enum ExistPolicy {
 		/**
@@ -45,7 +45,7 @@ public interface DataImportor {
 	 * 事务策略.
 	 * </p>
 	 *
-	 * @author 钟冀
+	 * @author zhongj
 	 */
 	public static enum TransactionPolicy {
 		/**

@@ -7,7 +7,7 @@ package cn.featherfly.common.db.data;
  * 数据变换器，用于导入或导出数据时对一些特殊数据进行处理
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public interface DataTransformer {
 	/**

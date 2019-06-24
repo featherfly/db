@@ -15,7 +15,7 @@ import cn.featherfly.common.structure.HashChainMap;
  * 记录元数据
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public class RecordModel {
 

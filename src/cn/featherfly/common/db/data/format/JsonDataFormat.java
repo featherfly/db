@@ -22,7 +22,7 @@ import com.fasterxml.jackson.core.JsonGenerator;
  * JsonDataFormat
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public class JsonDataFormat implements DataFormat{
 

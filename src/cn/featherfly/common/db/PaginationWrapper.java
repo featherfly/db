@@ -4,7 +4,7 @@ package cn.featherfly.common.db;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cn.featherfly.common.exception.AssertStandardSys;
+import cn.featherfly.common.lang.AssertIllegalArgument;
 import cn.featherfly.common.structure.page.Pagination;
 
 /**
@@ -12,7 +12,7 @@ import cn.featherfly.common.structure.page.Pagination;
  * PaginationImpl
  * </p>
  * @param <E> 泛型对象
- * @author 钟冀
+ * @author zhongj
  */
 public class PaginationWrapper<E> {
 
@@ -47,7 +47,8 @@ public class PaginationWrapper<E> {
 	 * @param pagination 分页模型
 	 */
 	public PaginationWrapper(Pagination pagination) {
-		AssertStandardSys.isNotNull(pagination, "pagination分页模型对象不能为空");
+//		AssertStandardSys.isNotNull(pagination, "pagination分页模型对象不能为空");
+		AssertIllegalArgument.isNotNull(pagination, "pagination分页模型对象不能为空");
 		Integer pageNumber = pagination.getPageNumber();
 		Integer pageSize = pagination.getPageSize();
 		if (pageNumber == null) {

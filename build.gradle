@@ -1,18 +1,6 @@
-apply plugin: "java"
-apply plugin: 'maven'  
-apply plugin: "maven-publish"
-apply plugin: 'signing'
-apply plugin: 'eclipse'
+apply from: './java_base.gradle'
+apply from: './maven_push.gradle'
 
-sourceCompatibility=1.7  
-targetCompatibility=1.7
-
-tasks.withType(JavaCompile) {
-    options.encoding = "UTF-8"
-}
-tasks.withType(Javadoc) {
-    options.encoding = "UTF-8"
-}
 sourceSets {
     main {
         java {
@@ -24,130 +12,9 @@ sourceSets {
     }
 }
 
-ext {
-	compileDependencies =[
-    	'cn.featherfly:featherfly-common:1.4.0'
-    	,'dom4j:dom4j:1.6.1'
-		]
-}
 
-repositories {
-    maven {
-        url  ant.properties['user.home'] +  "/.m2/repository"
-    }
-    maven {
-        url  "http://maven.aliyun.com/nexus/content/groups/public/"
-    }
-    mavenCentral()
-}
-
-task sourcesJar(type: Jar) {
-	classifier "sources"
-    from sourceSets.main.java.srcDirs
-}
-
-task javadocJar(type: Jar, dependsOn:javadoc) { 
-     classifier = "javadoc"
-     from javadoc.destinationDir 
-}
-
-artifacts {  
-    archives jar  
-    archives javadocJar  
-    archives sourcesJar  
-}  
- 
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-        	from components.java
-            artifact (sourcesJar) {
-             	classifier "sources"
-            }
-			artifact (javadocJar) {
-				classifier "javadoc"
-			}
-        }
-    }    
-}
-  
 dependencies {
-	for (def depend : compileDependencies)  {
-		compile (depend)
-	}
-    testCompile (
-    	'org.testng:testng:latest.integration'
-    )
-}
-
-//为所有的jar包做数字签名  
-signing {  
-    sign configurations.archives  
-}  
-
-uploadArchives {  
-    repositories {  
-        mavenDeployer {  
-            //为Pom文件做数字签名  
-            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) } 
-  
-            //指定项目部署到的中央库地址，UserName和Password就是Part 1中注册的账号。
-            //https://oss.sonatype.org/content/repositories/snapshots
-            //https://oss.sonatype.org/service/local/staging/deploy/maven2  
-            repository(url:"https://oss.sonatype.org/service/local/staging/deploy/maven2") {  
-                authentication(userName: 'yufei', password: 'yufeimvn101')  
-            }  
-              
-            pom.project {  
-                name project.name  
-                packaging 'jar'
-                description 'database tool'  
-                url 'https://github.com/featherfly/db.git'  
-  
-                scm {  
-                    url 'scm:git@github.com:featherfly/db.git'  
-                    connection 'scm:git@github.com:featherfly/db.git'  
-                    developerConnection 'git@github.com:featherfly/db.git'  
-                }  
-  
-                licenses {  
-                    license {  
-                        name 'The Apache Software License, Version 2.0'  
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'  
-                        distribution 'repo'  
-                    }  
-                }  
-  
-                developers {  
-                    developer {  
-                        id 'featherfly'  
-                        name 'Yufei'
-                    }  
-                }  
-            }  
-        }  
-    }  
-}
-/*
-test {
-    useTestNG()
-    testLogging.showStandardStreams = true
-    minHeapSize = "128m"
-    maxHeapSize = "512m"
-    jvmArgs '-XX:MaxPermSize=256m'
-    beforeTest { descriptor ->
-        logger.lifecycle("Running test: " + descriptor)
-    }
-    onOutput { descriptor, event ->
-        logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message)
-    }
-}
-*/
-jar {
-    manifest.attributes 'Build-Name': archivesBaseName
-    manifest.attributes 'Build-By': "zhong ji"
-    manifest.attributes 'Build-Tool' : "gradle " + gradle.gradleVersion
-    manifest.attributes 'Build-Jdk' : ant.properties['java.runtime.version']
-    manifest.attributes 'Bundle-License': 'http://www.apache.org/licenses/LICENSE-2.0'
+	compile group: 'cn.featherfly', name: 'featherfly-common', version: '1.7.0'
+	compile group: 'org.dom4j', name: 'dom4j', version: '2.1.1'	
+    testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
 }

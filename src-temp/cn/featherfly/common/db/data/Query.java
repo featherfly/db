@@ -6,7 +6,7 @@ package cn.featherfly.common.db.data;
  * Query
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public interface Query {
 	/**

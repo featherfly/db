@@ -9,7 +9,7 @@ import java.sql.Connection;
  * 数据过滤器，用于在导入与导出时进行过滤
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public interface DataFilter {
 	/**

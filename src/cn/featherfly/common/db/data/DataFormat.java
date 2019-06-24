@@ -13,7 +13,7 @@ import cn.featherfly.common.db.metadata.TableMetadata;
  * DataFomart
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public interface DataFormat {	
 	void writeDataStart(DatabaseMetadata databaseMetadata) throws Exception;

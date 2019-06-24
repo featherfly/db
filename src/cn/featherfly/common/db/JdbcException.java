@@ -9,7 +9,7 @@ import cn.featherfly.common.exception.LocalizedException;
  * JDBC操作包装异常
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public class JdbcException extends LocalizedException {
 	

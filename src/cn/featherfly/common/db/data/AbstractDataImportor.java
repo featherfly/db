@@ -13,7 +13,7 @@ import cn.featherfly.common.lang.LangUtils;
  * 抽象导入器
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public abstract class AbstractDataImportor extends AbstractDataImpExp implements DataImportor{
 

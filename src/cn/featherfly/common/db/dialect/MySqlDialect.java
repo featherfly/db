@@ -14,7 +14,7 @@ import cn.featherfly.common.lang.LangUtils;
  * <p>
  * Mysql数据库方言实现类.
  * </p>
- * @author 钟冀
+ * @author zhongj
  */
 public class MySqlDialect extends AbstractDialect {
 

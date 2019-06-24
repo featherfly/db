@@ -1,6 +1,6 @@
 //
 ///**
-// * @author 钟冀 - yufei
+// * @author zhongj - yufei
 // *		 	Mar 12, 2009
 // */
 //package cn.featherfly.common.db.data.json;
@@ -38,7 +38,7 @@
 // * 数据导出为xml
 // * </p>
 // *
-// * @author 钟冀
+// * @author zhongj
 // *
 // */
 //public class JsonExportor extends AbstractDataExportor {

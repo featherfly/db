@@ -14,7 +14,7 @@ import cn.featherfly.common.db.JdbcException;
  * javax.sql.DataSource的包装类，包装所有检查异常（SQLEception）为非检查异常（JdbcException）
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public class DataSourceWrapper {
 

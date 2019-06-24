@@ -6,7 +6,7 @@ package cn.featherfly.common.db.builder;
  * <p>
  * 带参数的表达式
  * </p>
- * @author 钟冀
+ * @author zhongj
  */
 public interface ParamedExpression extends Expression{
 	/**

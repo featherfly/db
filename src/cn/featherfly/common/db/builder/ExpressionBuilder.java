@@ -9,7 +9,7 @@ import cn.featherfly.common.db.operator.QueryOperator;
  * 表达式建造者
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public interface ExpressionBuilder extends Builder{
 	/**

@@ -13,7 +13,7 @@ import cn.featherfly.common.lang.LangUtils;
  * 条件表达式
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public class ConditionExpression implements ParamedExpression{
 

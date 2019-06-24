@@ -2,7 +2,7 @@ package cn.featherfly.common.db.builder;
 
 import java.util.Locale;
 
-import cn.featherfly.common.exception.StandardResourceBundleException;
+import cn.featherfly.common.exception.LocalizedException;
 
 
 /**
@@ -10,9 +10,9 @@ import cn.featherfly.common.exception.StandardResourceBundleException;
  * JDBC操作包装异常
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
-public class BuilderException extends StandardResourceBundleException {
+public class BuilderException extends LocalizedException {
 
 	private static final long serialVersionUID = -7034897190745766939L;
 

@@ -6,7 +6,7 @@ import java.util.Map;
  * <p>
  * 数据库方言的接口.
  * </p>
- * @author 钟冀
+ * @author zhongj
  */
 public interface Dialect {
 	/**

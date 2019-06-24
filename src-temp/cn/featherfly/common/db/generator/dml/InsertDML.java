@@ -13,7 +13,7 @@ import cn.featherfly.common.lang.AssertIllegalArgument;
  * InsertDDL
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public class InsertDML extends DMLGenerator{
 	

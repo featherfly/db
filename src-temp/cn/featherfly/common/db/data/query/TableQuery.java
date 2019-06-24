@@ -9,7 +9,7 @@ import cn.featherfly.common.db.data.Query;
  * TableQuery
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public class TableQuery implements Query{
 

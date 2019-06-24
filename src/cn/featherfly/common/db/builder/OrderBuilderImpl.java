@@ -10,7 +10,7 @@ import cn.featherfly.common.db.operator.OrderOperator;
  * 排序建造者
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public class OrderBuilderImpl implements OrderBuilder {
 
@@ -148,7 +148,7 @@ public class OrderBuilderImpl implements OrderBuilder {
 	 * 排序参数辅助对象
 	 * </p>
 	 *
-	 * @author 钟冀
+	 * @author zhongj
 	 */
 	public static class Order {
 

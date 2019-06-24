@@ -9,7 +9,6 @@ import java.util.List;
 import cn.featherfly.common.db.PaginationWrapper;
 import cn.featherfly.common.db.dialect.Dialect;
 import cn.featherfly.common.db.operator.QueryOperator;
-import cn.featherfly.common.exception.AssertStandardSys;
 import cn.featherfly.common.lang.CollectionUtils;
 import cn.featherfly.common.lang.StringUtils;
 import cn.featherfly.common.structure.page.Pagination;
@@ -20,7 +19,7 @@ import cn.featherfly.common.structure.page.Pagination;
  * 带参数条件查询建造者，例如（ name like ?）
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public class ConditionBuilder implements ExpressionBuilder, OrderBuilder {
 
@@ -58,7 +57,9 @@ public class ConditionBuilder implements ExpressionBuilder, OrderBuilder {
 		ConditionBuildUtils.appendCondition(result, orderBuilder.build());
 		
 		if (this.pagination != null) {
-			AssertStandardSys.isNotEmpty(this.dialect, "需要分页时，dialect不能为空");
+		    if (this.dialect == null) {
+                throw new BuilderException("需要分页时，dialect不能为空");
+            }
 			PaginationWrapper<Object> pw = new PaginationWrapper<Object>(pagination);
 			return dialect.getPaginationSql(result.toString(), pw.getStart(), pw.getLimit()).trim();
 		} else {
@@ -250,7 +251,9 @@ public class ConditionBuilder implements ExpressionBuilder, OrderBuilder {
 			}
 		}
 		if (this.pagination != null) {
-			AssertStandardSys.isNotEmpty(this.dialect, "需要分页时，dialect不能为空");
+		    if (this.dialect == null) {
+		        throw new BuilderException("需要分页时，dialect不能为空");
+		    }
 			PaginationWrapper<Object> pw = new PaginationWrapper<Object>(pagination);
 			Object[] params = dialect.getPaginationSqlParameter(result.toArray(), pw.getStart(), pw.getLimit());
 			result.clear();

@@ -7,7 +7,7 @@ package cn.featherfly.common.db.builder;
  * <p>
  * 条件建造者工具
  * </p>
- * @author 钟冀
+ * @author zhongj
  */
 public class ConditionBuildUtils {
 

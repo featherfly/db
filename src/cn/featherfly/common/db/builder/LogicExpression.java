@@ -8,7 +8,7 @@ import cn.featherfly.common.db.operator.LogicOperator;
  * 条件逻辑
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public class LogicExpression implements Expression{
 

@@ -12,7 +12,7 @@ import cn.featherfly.common.db.dialect.Dialect;
  * JsonDataFormatFactory
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public class JsonDataFormatFactory implements DataFormatFactory{
 

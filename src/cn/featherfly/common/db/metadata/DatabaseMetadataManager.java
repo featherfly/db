@@ -26,7 +26,7 @@ import cn.featherfly.common.lang.StringUtils;
  * 数据库元数据管理器
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public class DatabaseMetadataManager {
 

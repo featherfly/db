@@ -16,7 +16,7 @@ import cn.featherfly.common.lang.StringUtils;
  * 条件逻辑组建造者
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public class ConditionGroup implements ExpressionBuilder, LogicBuilder , ParamedExpression{
 

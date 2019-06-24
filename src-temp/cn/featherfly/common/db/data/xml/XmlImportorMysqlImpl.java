@@ -1,6 +1,6 @@
 
 /**
- * @author 钟冀 - yufei
+ * @author zhongj - yufei
  *		 	Mar 12, 2009
  */
 package cn.featherfly.common.db.data.xml;
@@ -14,7 +14,7 @@ import cn.featherfly.common.db.dialect.MySqlDialect;
  * 数据导出为xml
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  *
  */
 public class XmlImportorMysqlImpl extends XmlImportor{

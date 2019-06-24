@@ -5,7 +5,7 @@ package cn.featherfly.common.db.metadata;
  * <p>
  * 数据表类型
  * </p>
- * @author 钟冀
+ * @author zhongj
  */
 public enum TableType {
 	/**

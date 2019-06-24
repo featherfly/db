@@ -22,7 +22,7 @@ import cn.featherfly.common.lang.DateUtils;
  * JsonDataFormat
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public class SqlDataFormat implements DataFormat{
 

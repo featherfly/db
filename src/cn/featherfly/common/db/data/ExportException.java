@@ -10,7 +10,7 @@ import cn.featherfly.common.db.JdbcException;
  * export异常
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public class ExportException extends JdbcException {
 	

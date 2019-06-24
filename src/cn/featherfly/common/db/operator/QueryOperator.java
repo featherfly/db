@@ -6,7 +6,7 @@ package cn.featherfly.common.db.operator;
  * 操作符号
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public enum QueryOperator {
     

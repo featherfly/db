@@ -8,7 +8,7 @@ import cn.featherfly.common.db.dialect.Dialect;
  * AbstractGenerator
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public abstract class AbstractGenerator implements Generator{
 	

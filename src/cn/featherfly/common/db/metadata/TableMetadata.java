@@ -11,7 +11,7 @@ import java.util.Map;
  * <p>
  * 表元数据
  * </p>
- * @author 钟冀
+ * @author zhongj
  */
 public class TableMetadata {
 

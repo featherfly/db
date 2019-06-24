@@ -9,7 +9,7 @@ import java.util.Map;
  * <p>
  * 库元数据
  * </p>
- * @author 钟冀
+ * @author zhongj
  */
 public class DatabaseMetadata {
 

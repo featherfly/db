@@ -11,7 +11,7 @@ import cn.featherfly.common.db.builder.ConditionBuilder;
  * 数据导出
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public interface DataFormatExportor {
 	/**

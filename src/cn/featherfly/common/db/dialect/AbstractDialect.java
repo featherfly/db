@@ -13,7 +13,7 @@ import cn.featherfly.common.lang.ArrayUtils;
  * 数据库方言的抽象类.
  * 实现了一些通用内容.
  * </p>
- * @author 钟冀
+ * @author zhongj
  */
 public abstract class AbstractDialect implements Dialect {
 

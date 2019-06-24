@@ -5,7 +5,7 @@ package cn.featherfly.common.db.metadata;
  * <p>
  * 列元数据
  * </p>
- * @author 钟冀
+ * @author zhongj
  */
 public class ColumnMetadata {
 

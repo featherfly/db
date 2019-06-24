@@ -27,7 +27,7 @@ import cn.featherfly.common.lang.LangUtils;
  * DataTool
  * </p>
  * 
- * @author 钟冀
+ * @author zhongj
  */
 public class DataTool {
 	/**

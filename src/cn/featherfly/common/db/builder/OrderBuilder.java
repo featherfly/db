@@ -5,7 +5,7 @@ package cn.featherfly.common.db.builder;
  * 排序构建接口
  * </p>
  *
- * @author 钟冀
+ * @author zhongj
  */
 public interface OrderBuilder {
 	/**
