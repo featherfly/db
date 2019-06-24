@@ -1,17 +1,6 @@
 apply from: './java_base.gradle'
 apply from: './maven_push.gradle'
 
-sourceSets {
-    main {
-        java {
-            srcDirs = ["src"]
-        }
-        resources {
-            srcDirs = ["resources"]
-        }
-    }
-}
-
 
 dependencies {
 	compile group: 'cn.featherfly', name: 'featherfly-common', version: '1.7.0'
