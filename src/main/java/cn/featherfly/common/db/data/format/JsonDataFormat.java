@@ -58,8 +58,8 @@ public class JsonDataFormat implements DataFormat {
 
     /**
      * {@inheritDoc}
-     * 
-     * @throws IOException
+     *
+     * @throws IOException IOException
      */
     @Override
     public void writeDataEnd(DatabaseMetadata databaseMetadata) throws IOException {
@@ -88,7 +88,7 @@ public class JsonDataFormat implements DataFormat {
 
     /**
      * {@inheritDoc}
-     * 
+     *
      * @throws Exception
      */
     @Override

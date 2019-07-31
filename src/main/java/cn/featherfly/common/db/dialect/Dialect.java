@@ -115,7 +115,6 @@ public interface Dialect {
     /**
      * get converted keywords
      *
-     * @param keywords sql keywords
      * @return sql key words
      */
     default Keyworld getKeywords() {
