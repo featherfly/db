@@ -3,7 +3,8 @@ apply from: './maven_push.gradle'
 
 
 dependencies {
-	compile group: 'cn.featherfly', name: 'featherfly-common', version: '1.7.0'
+	compile group: 'cn.featherfly', name: 'featherfly-common', version: '1.7.2'
 	compile group: 'org.dom4j', name: 'dom4j', version: '2.1.1'	
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.9.2'	
     testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
 }

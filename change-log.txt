@@ -1,7 +1,9 @@
-2019-
+2019-07-31
 1.5.0
-    1.升级featherfly-common到1.7.0
-    2.
+    1.升级featherfly-common到1.7.2
+    2.修复DatabaseMetadata.getTable TableMetadata.getColumn方法大小写问题
+    3.删除PaginationWrapper
+    4.加入PostgreSQLDialect(未测试-_-)
 
 2015-06-28
 1.4.9
