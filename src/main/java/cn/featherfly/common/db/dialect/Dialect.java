@@ -170,7 +170,6 @@ public interface Dialect {
      * convert column or table name if necessary
      *
      * @param tableOrColumnName column or table name
-     * @param aggregateFunction aggregateFunction
      * @return sql
      */
     default String convertTableOrColumnName(String tableOrColumnName) {
