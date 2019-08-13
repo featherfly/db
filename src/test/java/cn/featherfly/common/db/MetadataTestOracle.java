@@ -23,7 +23,7 @@ public class MetadataTestOracle {
         dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
         dataSource.setUsername("armybms");
         dataSource.setPassword("armybms");
-        DatabaseMetadata meta = DatabaseMetadataManager.getDefaultManager().create(dataSource, "ARMYBMS");
+        DatabaseMetadata meta = DatabaseMetadataManager.getDefaultManager().create(dataSource, "db_test");
 
         System.out.println(meta.getName());
 

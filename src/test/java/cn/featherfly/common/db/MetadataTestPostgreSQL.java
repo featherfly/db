@@ -17,7 +17,7 @@ public class MetadataTestPostgreSQL {
         //		dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
         //		dataSource.setUsername("scbmptest");
         //		dataSource.setPassword("scbmptest");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/juorm_jdbc");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/db_test");
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUsername("postgres");
         dataSource.setPassword("123456");
