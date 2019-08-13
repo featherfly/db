@@ -11,7 +11,7 @@ import java.util.Map;
  * <p>
  * 表元数据
  * </p>
- * 
+ *
  * @author zhongj
  */
 public class TableMetadata {
@@ -27,7 +27,7 @@ public class TableMetadata {
      * <p>
      * 返回指定名称的列元数据对象. 没有找到返回null.
      * </p>
-     * 
+     *
      * @param columnName 表名称
      * @return 列元数据对象
      */
@@ -39,7 +39,7 @@ public class TableMetadata {
      * <p>
      * 返回所有列元数据对象的集合.
      * </p>
-     * 
+     *
      * @return 所有列元数据对象的集合
      */
     public Collection<ColumnMetadata> getColumns() {
@@ -50,7 +50,7 @@ public class TableMetadata {
      * <p>
      * 返回所有列元数据对象的MAP.
      * </p>
-     * 
+     *
      * @return 所有列元数据对象的MAP
      */
     public Map<String, ColumnMetadata> getColumnMap() {
@@ -61,7 +61,7 @@ public class TableMetadata {
      * <p>
      * 返回所有主键列元数据对象的列表.
      * </p>
-     * 
+     *
      * @return 所有主键列元数据对象的列表.
      */
     public List<ColumnMetadata> getPrimaryColumns() {
@@ -72,21 +72,21 @@ public class TableMetadata {
      * <p>
      * 添加列元数据.
      * </p>
-     * 
+     *
      * @param columnMetadata 列元数据对象
      */
     public void addColumn(ColumnMetadata columnMetadata) {
         if (columnMetadata.isPrimaryKey()) {
             primaryColumns.add(columnMetadata);
         }
-        columnMap.put(columnMetadata.getName(), columnMetadata);
+        columnMap.put(columnMetadata.getName().toUpperCase(), columnMetadata);
     }
 
     /**
      * <p>
      * 添加列元数据.
      * </p>
-     * 
+     *
      * @param columnMetadatas 列元数据对象数组
      */
     public void addColumn(ColumnMetadata... columnMetadatas) {
@@ -99,7 +99,7 @@ public class TableMetadata {
      * <p>
      * 添加列元数据.
      * </p>
-     * 
+     *
      * @param columnMetadatas 列元数据对象集合
      */
     public void addColumn(Collection<ColumnMetadata> columnMetadatas) {
