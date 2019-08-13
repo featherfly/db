@@ -3,6 +3,9 @@ package cn.featherfly.common.db.dialect;
 import java.util.Map;
 
 import cn.featherfly.common.constant.Chars;
+import cn.featherfly.common.db.operator.LogicOperator;
+import cn.featherfly.common.db.operator.OrderOperator;
+import cn.featherfly.common.lang.LangUtils;
 
 /**
  * <p>
@@ -127,12 +130,85 @@ public interface Dialect {
      * @param keywords sql keywords
      * @return sql key words
      */
+    default String getKeyword(OrderOperator keywords) {
+        if (isKeywordsUppercase()) {
+            return keywords.toString();
+        } else {
+            return keywords.toString().toLowerCase();
+        }
+    }
+
+    /**
+     * get converted keywords
+     *
+     * @param keywords sql keywords
+     * @return sql key words
+     */
+    default String getKeyword(LogicOperator keywords) {
+        if (isKeywordsUppercase()) {
+            return keywords.toString();
+        } else {
+            return keywords.toString().toLowerCase();
+        }
+    }
+
+    /**
+     * get converted keywords
+     *
+     * @param keywords sql keywords
+     * @return sql key words
+     */
     default String getKeyword(Keywords keywords) {
         if (isKeywordsUppercase()) {
             return keywords.toString();
         } else {
             return keywords.toString().toLowerCase();
         }
+    }
+
+    /**
+     * convert column or table name if necessary
+     *
+     * @param tableOrColumnName column or table name
+     * @param aggregateFunction aggregateFunction
+     * @return sql
+     */
+    default String convertTableOrColumnName(String tableOrColumnName) {
+        if (LangUtils.isEmpty(tableOrColumnName)) {
+            return tableOrColumnName;
+        }
+        String result = tableOrColumnName;
+        if (isTableAndColumnNameUppercase()) {
+            result = result.toUpperCase();
+        } else {
+            result = result.toLowerCase();
+        }
+        return result;
+    }
+
+    /**
+     * build sql for table
+     *
+     * @param tableName tableName
+     * @return sql
+     */
+    default String buildTableSql(String tableName) {
+        return buildTableSql(tableName, null);
+    }
+
+    /**
+     * build sql for table with tableAlias
+     *
+     * @param tableName  tableName
+     * @param tableAlias tableAlias
+     * @return sql
+     */
+    default String buildTableSql(String tableName, String tableAlias) {
+        String result = wrapName(convertTableOrColumnName(tableName));
+        if (LangUtils.isNotEmpty(tableAlias)) {
+            result = result + " " + tableAlias;
+        }
+        return result;
     }
 
     public static class Keyworld {
