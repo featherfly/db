@@ -1,0 +1,1903 @@
+{
+	"name" : "meihuo",
+	"tables" : [{
+				"name" : "SYS_ADVICE",
+				"pkMapping" : "ID",
+				"rows" : [{
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"OWNER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"CONTENT" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "ddddd"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:31:29"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:31:29"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"OWNER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"CONTENT" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "eeeeee"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:32:08"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:32:08"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							}
+						}]
+			}, {
+				"name" : "SYS_USER_HEART",
+				"pkMapping" : "ID",
+				"rows" : [{
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"HEART" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "aabbcc"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 13:14:20"
+							},
+							"LONGITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "999.9999999"
+							},
+							"LATITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "1.0"
+							},
+							"USER_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "8"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"HEART" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "123"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-05 15:02:50"
+							},
+							"LONGITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "100.0"
+							},
+							"LATITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "100.0"
+							},
+							"USER_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "3"
+							},
+							"HEART" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "123"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-05 15:08:05"
+							},
+							"LONGITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "100.0"
+							},
+							"LATITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "100.0"
+							},
+							"USER_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "4"
+							},
+							"HEART" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "123"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-05 15:08:33"
+							},
+							"LONGITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "100.1"
+							},
+							"LATITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "200.54"
+							},
+							"USER_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}]
+			}, {
+				"name" : "AD_ADVERTISING",
+				"pkMapping" : "ID",
+				"rows" : [{
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "测试名称1"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 17:10:17"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 17:11:01"
+							},
+							"CREATOR" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"MODIFIOR" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"IMAGE" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/ad/image1"
+							},
+							"WEBSITE" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/ad/website1/"
+							},
+							"PHONE" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "1234556677"
+							},
+							"LONGITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "123.252"
+							},
+							"LATITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "55.444"
+							},
+							"CATEGORY_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"INDUSTRY_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"RELEASER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "测试名称2"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 17:12:50"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 17:13:01"
+							},
+							"CREATOR" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"MODIFIOR" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"IMAGE" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/ad/image2"
+							},
+							"WEBSITE" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/ad/website2/"
+							},
+							"PHONE" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "2222222222"
+							},
+							"LONGITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "12.577"
+							},
+							"LATITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "125.55"
+							},
+							"CATEGORY_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"INDUSTRY_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"RELEASER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}]
+			}, {
+				"name" : "AD_CATEGORY",
+				"pkMapping" : "ID",
+				"rows" : [{
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "新品上市"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 16:15:16"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 16:15:18"
+							},
+							"CREATOR" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"MODIFIOR" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LIST_ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "sy/sy01"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "fjz/fjz01"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "打折促销"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 16:15:16"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 16:15:18"
+							},
+							"CREATOR" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"MODIFIOR" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LIST_ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "sy/sy02"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "fjz/fjz02"
+							}
+						}]
+			}, {
+				"name" : "SYS_WORK",
+				"pkMapping" : "ID",
+				"rows" : [{
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"WORK_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "计算机/互联网/通信"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LIST_ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/test_icon"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"WORK_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "生产/工艺/制造"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LIST_ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/test_icon"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "3"
+							},
+							"WORK_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "商业/服务业/个体经营"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LIST_ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/test_icon"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "3"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "4"
+							},
+							"WORK_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "金融/银行/投资/保险"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LIST_ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/test_icon"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "4"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "5"
+							},
+							"WORK_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "文化/广告/传媒"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LIST_ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/test_icon"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "5"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "6"
+							},
+							"WORK_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "娱乐/艺术/表演"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LIST_ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/test_icon"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "6"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "7"
+							},
+							"WORK_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "医疗/护理/制药"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LIST_ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/test_icon"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "7"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "8"
+							},
+							"WORK_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "律师/法务"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LIST_ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/test_icon"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "8"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "9"
+							},
+							"WORK_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "教育/培训"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:41:09"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LIST_ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/test_icon"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "9"
+							}
+						}]
+			}, {
+				"name" : "AD_ADVERTISING_INTEREST",
+				"pkMapping" : "ID",
+				"rows" : [{
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"INTEREST" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-25 15:11:46"
+							},
+							"OWNER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LONGITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "100.0"
+							},
+							"LATITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "100.0"
+							},
+							"ADVERTISING_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"INTEREST" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-26 12:29:01"
+							},
+							"OWNER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LONGITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "55.0"
+							},
+							"LATITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "111.0"
+							},
+							"ADVERTISING_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							}
+						}]
+			}, {
+				"name" : "SYS_USER",
+				"pkMapping" : "ID",
+				"rows" : [{
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"USERNAME" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"PASSWORD" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "202cb962ac59075b964b07152d234b70"
+							},
+							"MOBILE_NO" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "1"
+							},
+							"REGISTER_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-28 05:43:12"
+							},
+							"RECOMMENDER" : {
+								"type" : "4",
+								"null" : "1"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-28 05:43:20"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-28 05:43:23"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "0"
+							},
+							"SEX" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"TOKEN" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "1"
+							},
+							"AGE" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "99"
+							},
+							"CONSTELLATION" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "12"
+							},
+							"WORK" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "4"
+							},
+							"SALARY" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "10500"
+							},
+							"ALWAYS_AT" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "成都"
+							},
+							"HEAD" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "2014/8/14/d02a729e80c147598cfb9549b1401932"
+							},
+							"email" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "featherfly@21cn.com"
+							},
+							"email_binding" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "6"
+							},
+							"USERNAME" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"PASSWORD" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "827ccb0eea8a706c4c34a16891f84e7b"
+							},
+							"MOBILE_NO" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "13258245884"
+							},
+							"REGISTER_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-28 07:34:47"
+							},
+							"RECOMMENDER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-28 07:34:47"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-28 07:34:47"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "0"
+							},
+							"SEX" : {
+								"type" : "-6",
+								"null" : "1"
+							},
+							"TOKEN" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "610a525dc4ed409d9fa6c56b058d60e2"
+							},
+							"AGE" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "18"
+							},
+							"CONSTELLATION" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"WORK" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"SALARY" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ALWAYS_AT" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"HEAD" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"email" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"email_binding" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "0"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "7"
+							},
+							"USERNAME" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"PASSWORD" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "202cb962ac59075b964b07152d234b70"
+							},
+							"MOBILE_NO" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "18981949495"
+							},
+							"REGISTER_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-29 13:18:11"
+							},
+							"RECOMMENDER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "6"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-29 13:18:11"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-29 13:18:11"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "0"
+							},
+							"SEX" : {
+								"type" : "-6",
+								"null" : "1"
+							},
+							"TOKEN" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "d838bb37aef0495cb270ccd960cefb45"
+							},
+							"AGE" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "18"
+							},
+							"CONSTELLATION" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"WORK" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"SALARY" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ALWAYS_AT" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"HEAD" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"email" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"email_binding" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "0"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "8"
+							},
+							"USERNAME" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"PASSWORD" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "827ccb0eea8a706c4c34a16891f84e7b"
+							},
+							"MOBILE_NO" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "18981949496"
+							},
+							"REGISTER_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 13:12:50"
+							},
+							"RECOMMENDER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "6"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 13:12:50"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-31 13:12:50"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"SEX" : {
+								"type" : "-6",
+								"null" : "1"
+							},
+							"TOKEN" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "9315c0eaa0734421bfa4f5fc53100439"
+							},
+							"AGE" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "18"
+							},
+							"CONSTELLATION" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"WORK" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"SALARY" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ALWAYS_AT" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"HEAD" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"email" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"email_binding" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "0"
+							}
+						}]
+			}, {
+				"name" : "AD_ADVERTISING_FAVORITE",
+				"pkMapping" : "ID",
+				"rows" : [{
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-25 12:26:43"
+							},
+							"OWNER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LONGITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "120.0"
+							},
+							"LATITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "125.0"
+							},
+							"ADVERTISING_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-26 12:27:52"
+							},
+							"OWNER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LONGITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "55.0"
+							},
+							"LATITUDE" : {
+								"type" : "8",
+								"null" : "0",
+								"value" : "111.0"
+							},
+							"ADVERTISING_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							}
+						}]
+			}, {
+				"name" : "AD_CATEGORY_FAVORITE",
+				"pkMapping" : "ID",
+				"rows" : [{
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "22"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-21 13:10:05"
+							},
+							"OWNER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"CATEGORY_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "23"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-21 13:10:05"
+							},
+							"OWNER" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"CATEGORY_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							}
+						}]
+			}, {
+				"name" : "SYS_INTEREST",
+				"pkMapping" : "ID",
+				"rows" : [{
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "购物"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "音乐"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "3"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "电影"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "3"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "4"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "运动"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "4"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "5"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "时尚"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "5"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "6"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "美食"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "6"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "7"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "旅游"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "7"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "8"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "游戏"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "8"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "9"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "阅读"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "9"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "10"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "摄影"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "10"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "11"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "电子"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "11"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "12"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "汽车"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:02"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-08-15 02:37:07"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "1"
+							},
+							"ORDER_NO" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "12"
+							}
+						}]
+			}, {
+				"name" : "SYS_USER_INTEREST",
+				"pkMapping" : "INTEREST_ID,USER_ID",
+				"rows" : [{
+							"INTEREST_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"USER_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"INTEREST_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "5"
+							},
+							"USER_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}, {
+							"INTEREST_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "6"
+							},
+							"USER_ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							}
+						}]
+			}, {
+				"name" : "SYS_INDUSTRY",
+				"pkMapping" : "ID",
+				"rows" : [{
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "行业"
+							},
+							"PID" : {
+								"type" : "4",
+								"null" : "1"
+							},
+							"LAYER" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "0"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-20 13:11:22"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-20 13:11:27"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/industry/0.png"
+							}
+						}, {
+							"ID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "2"
+							},
+							"INDUSTRY_NAME" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "餐饮"
+							},
+							"PID" : {
+								"type" : "4",
+								"null" : "0",
+								"value" : "1"
+							},
+							"LAYER" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "0100"
+							},
+							"CREATE_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-20 13:11:22"
+							},
+							"MODIFY_TIME" : {
+								"type" : "93",
+								"null" : "0",
+								"value" : "2014-07-20 13:11:27"
+							},
+							"AVAILABLE" : {
+								"type" : "-6",
+								"null" : "0",
+								"value" : "1"
+							},
+							"ICON" : {
+								"type" : "12",
+								"null" : "0",
+								"value" : "/industry/1.png"
+							}
+						}]
+			}]
+}
