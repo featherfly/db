@@ -26,6 +26,7 @@ public class PostgreSQLDialect extends AbstractDialect {
     /**
      */
     public PostgreSQLDialect() {
+        setTableAndColumnNameUppercase(false);
     }
 
     /**
@@ -146,7 +147,7 @@ public class PostgreSQLDialect extends AbstractDialect {
     @Override
     public String wrapName(String name) {
         if (LangUtils.isNotEmpty(name)) {
-            return "\"" + name + "\"";
+            return getWrapSign() + name + getWrapSign();
         }
         return name;
     }
@@ -156,6 +157,15 @@ public class PostgreSQLDialect extends AbstractDialect {
      */
     @Override
     public String getFkCheck(boolean check) {
-        return "SET FOREIGN_KEY_CHECKS=" + (check ? 1 : 0);
+        // FIXME 未实现方法
+        throw new RuntimeException("未实现");
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String getWrapSign() {
+        return "\"";
     }
 }

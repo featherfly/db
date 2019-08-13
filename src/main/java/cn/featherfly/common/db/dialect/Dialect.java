@@ -210,6 +210,8 @@ public interface Dialect {
         return result;
     }
 
+    String getWrapSign();
+
     public static class Keyworld {
         private Dialect dialect;
 

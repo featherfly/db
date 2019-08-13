@@ -29,7 +29,8 @@ public class MetadataTestPostgreSQL {
         for (TableMetadata td : meta.getTables()) {
             System.out.println("\t" + td.getName());
             td.getColumns().forEach(c -> {
-                System.out.println("\t\t" + c.getName() + " " + c.getTypeName() + "(" + c.getType() + ")");
+                System.out.println("\t\t" + c.getName() + " " + c.getTypeName() + "(" + c.getType() + ")" + " "
+                        + c.getDefaultValue());
             });
         }
     }
