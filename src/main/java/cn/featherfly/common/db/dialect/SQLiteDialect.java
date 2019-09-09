@@ -1,3 +1,4 @@
+
 package cn.featherfly.common.db.dialect;
 
 import java.sql.Types;
@@ -6,28 +7,28 @@ import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cn.featherfly.common.constant.Chars;
 import cn.featherfly.common.db.SqlUtils;
 import cn.featherfly.common.exception.UnsupportedException;
-import cn.featherfly.common.lang.ArrayUtils;
 import cn.featherfly.common.lang.DateUtils;
 import cn.featherfly.common.lang.LangUtils;
 
 /**
  * <p>
- * Mysql数据库方言实现类.
+ * SQLite
+ * </p>
+ * <p>
+ * 2019-09-09
  * </p>
  *
  * @author zhongj
  */
-public class PostgreSQLDialect extends AbstractDialect {
+public class SQLiteDialect extends AbstractDialect {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(PostgreSQLDialect.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(SQLiteDialect.class);
 
     /**
      */
-    public PostgreSQLDialect() {
-        setTableAndColumnNameUppercase(false);
+    public SQLiteDialect() {
     }
 
     /**
@@ -46,31 +47,6 @@ public class PostgreSQLDialect extends AbstractDialect {
         return getPaginationSql(sql, start, true);
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public Object[] getPaginationSqlParameter(Object[] params, int start, int limit) {
-        Object[] pagingParams = null;
-        if (limit > Chars.ZERO) {
-            LOGGER.debug("limit > 0 , use limit {}", limit);
-        } else if (limit == Chars.ZERO) {
-            LOGGER.debug("limit = 0 , use default limit {}", DEFAULT_LIMIT);
-            limit = DEFAULT_LIMIT;
-        } else {
-            LOGGER.debug("limit < 0 , don't use limit");
-            limit = Integer.MAX_VALUE;
-        }
-        if (start > 0) {
-            LOGGER.debug("start > 0 , use start {}", start);
-            pagingParams = new Object[] { Integer.valueOf(limit), Integer.valueOf(start) };
-        } else {
-            LOGGER.debug("start < 0 , don't use start");
-            pagingParams = new Object[] { Integer.valueOf(limit) };
-        }
-        return (Object[]) ArrayUtils.concat(params, pagingParams);
-    }
-
     private String getPaginationSql(String sql, int start, boolean isParamNamed) {
         sql = sql.trim();
         boolean isForUpdate = false;
@@ -83,13 +59,13 @@ public class PostgreSQLDialect extends AbstractDialect {
         pagingSelect.append(sql);
         if (isParamNamed) {
             if (start > 0) {
-                pagingSelect.append(String.format(" LIMIT :%s OFFSET :%s", LIMIT_PARAM_NAME, START_PARAM_NAME));
+                pagingSelect.append(String.format(" LIMIT :%s,:%s", START_PARAM_NAME, LIMIT_PARAM_NAME));
             } else {
                 pagingSelect.append(String.format(" LIMIT :%s", LIMIT_PARAM_NAME));
             }
         } else {
             if (start > 0) {
-                pagingSelect.append(" LIMIT ? OFFSET ?");
+                pagingSelect.append(" LIMIT ?,?");
             } else {
                 pagingSelect.append(" LIMIT ?");
             }
@@ -157,16 +133,16 @@ public class PostgreSQLDialect extends AbstractDialect {
      * {@inheritDoc}
      */
     @Override
-    public String getFkCheck(boolean check) {
-        // FIXME 未实现方法
-        throw new UnsupportedException();
+    public String getWrapSign() {
+        return "`";
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public String getWrapSign() {
-        return "\"";
+    public String getFkCheck(boolean check) {
+        // FIXME 未实现方法
+        throw new UnsupportedException();
     }
 }

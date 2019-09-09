@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import cn.featherfly.common.constant.Chars;
 import cn.featherfly.common.db.SqlUtils;
+import cn.featherfly.common.exception.UnsupportedException;
 import cn.featherfly.common.lang.ArrayUtils;
 import cn.featherfly.common.lang.DateUtils;
 import cn.featherfly.common.lang.LangUtils;
@@ -16,7 +17,7 @@ import cn.featherfly.common.lang.LangUtils;
  * <p>
  * Oracle数据库方言实现类.
  * </p>
- * 
+ *
  * @author zhongj
  */
 public class OracleDialect extends AbstractDialect {
@@ -172,7 +173,7 @@ public class OracleDialect extends AbstractDialect {
     @Override
     public String getFkCheck(boolean check) {
         // FIXME 未实现方法
-        throw new RuntimeException("未实现");
+        throw new UnsupportedException();
     }
 
     /**

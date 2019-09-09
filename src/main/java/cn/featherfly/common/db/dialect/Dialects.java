@@ -15,4 +15,6 @@ public interface Dialects {
     Dialect ORACLE = new OracleDialect();
 
     Dialect POSTGRESQL = new PostgreSQLDialect();
+
+    Dialect SQLITE = new SQLiteDialect();
 }
